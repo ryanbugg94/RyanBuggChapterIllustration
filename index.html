@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>Chapter Illistration</title>
+       <link rel="stylesheet" href="css/style.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+       <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	<script>
+   
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+</script>
+
+
+ </head> 
+	
+<body>
+
+<!----- HEADER START--->   
+<header id="header">
+<div class="content">
+<div id="logo"><a href=""> Chapters</a></div>
+
+<nav id="nav">
+	<ul>
+		<li><a href="#slide1" class="active" title="Next Section" >Cover</a></li>
+		<li><a href="#slide2" title="Next Section">I</a></li>
+		<li><a href="#slide3" title="Next Section">II</a></li>
+		<li><a  href="#slide4" title="Next Section">III</a></li>
+		<li><a href="#slide5" title="Next Section">IIII</a></li>
+	</ul>
+</nav>
+</div>
+</header>	
+<!----- HEADER END--->   
+
+<!----- SLIDES START --->   	
+	<div id="slide1">
+		<div class="content">
+            <h2>The</h2>
+		    <h1>Hobbit</h1>
+		    <div id="divider"> </div>
+		     <h3>J.R.R. Tolkien</h3>
+           <div id="ribbon"></div>
+	       <div id="new_year"> </div>
+		</div> 
+    </div> 
+
+	<div id="slide2">
+		<div class="content" >
+            <div class="quotes_container">
+		    <h3 class="quotes"><p>Chapter I</p>
+
+			<p>AN UNEXPECTED PARTY</p>
+
+			"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a hobbit-hole, and that means comfort.
+
+			It had a perfectly round door like a porthole, painted green, with a shiny yellow brass knob in the exact middle. The door opened on to a tube-shaped hall like a tunnel: a very comfortable tunnel without smoke, with panelled walls, and floors tiled and carpeted, provided with polished chairs, and lots and lots of pegs for hats and coats—the hobbit was fond of visitors. The tunnel wound on and on, going fairly but not quite straight into the side of the hill—The Hill, as all the people for many miles round called it—and many little round doors opened out of it, first on one side and then on another. No going upstairs for the hobbit: bedrooms, bathrooms, cellars, pantries (lots of these), wardrobes (he had whole rooms devoted to clothes), kitchens, dining-rooms, all were on the same floor, and indeed on the same passage. The best rooms were all on the left-hand side (going in), for these were the only ones to have windows, deep-set round windows looking over his garden, and meadows beyond, sloping down to the river.”</h3>
+		</div> 
+		</div> 
+    </div> 
+	
+	
+   <div id="slide3">
+		<div class="content">
+			   <div class="quotes_container">
+		       <h3 class="quotes"><p>Chapter II</p>
+
+				<p>ROAST MUTTON</p>
+
+				"Up jumped Bilbo, and putting on his dressing-gown went into the dining-room. There he saw nobody, but all the signs of a large and hurried breakfast. There was a fearful mess in the room, and piles of unwashed crocks in the kitchen. Nearly every pot and pan he possessed seemed to have been used. The washing-up was so dismally real that Bilbo was forced to believe the party of the night before had not been part of his bad dreams, as he had rather hoped. Indeed he was really relieved after all to think that they had all gone without him, and without bothering to wake him up (“but with never a thank-you” he thought); and yet in a way he could not help feeling just a trifle disappointed. The feeling surprised him.”  </h3>
+		    </div> 
+		</div> 
+    </div> 
+	
+	
+	<div id="slide4">
+		<div class="content">
+              <div class="quotes_container">
+		    <h3 class="quotes"><p>Chapter III</p>
+
+				<p>A SHORT REST</p>
+
+				"They did not sing or tell stories that day, even though the weather improved; nor the next day, nor the day after. They had begun to feel that danger was not far away on either side. They camped under the stars, and their horses had more to eat than they had; for there was plenty of grass, but there was not much in their bags, even with what they had got from the trolls. One morning they forded a river at a wide shallow place full of the noise of stones and foam. The far bank was steep and slippery. When they got to the top of it, leading their ponies, they saw that the great mountains had marched down very near to them. Already they seemed only a day’s easy journey from the feet of the nearest. Dark and drear it looked, though there were patches of sunlight on its brown sides, and behind its shoulders the tips of snow-peaks gleamed.” </h3>
+		</div> 
+		</div> 
+    </div> 
+	
+	
+	<div id="slide5">
+		<div class="content">
+           <div class="quotes_container">
+		    <h3 class="quotes"><p>Chapter IV</p>
+
+			<p>OVER HILL AND UNDER HILL</p>
+
+			"There were many paths that led up into those mountains, and many passes over them. But most of the paths were cheats and deceptions and led nowhere or to bad ends; and most of the passes were infested by evil things and dreadful dangers. The dwarves and the hobbit, helped by the wise advice of Elrond and the knowledge and memory of Gandalf, took the right road to the right pass.
+
+			Long days after they had climbed out of the valley and left the Last Homely House miles behind, they were still going up and up and up. It was a hard path and a dangerous path, a crooked way and a lonely and a long. Now they could look back over the lands they had left, laid out behind them far below. Far, far away in the West, where things were blue and faint, Bilbo knew there lay his own country of safe and comfortable things, and his little hobbit-hole. He shivered. It was getting bitter cold up here, and the wind came shrill among the rocks. Boulders, too, at times came galloping down the mountain-sides, let loose by mid-day sun upon the snow, and passed among them (which was lucky), or over their heads (which was alarming). The nights were comfortless and chill, and they did not dare to sing or talk too loud, for the echoes were uncanny, and the silence seemed to dislike being broken—except by the noise of water and the wail of wind and the crack of stone.” </h3>
+		</div> 
+		
+
+    </div> 
+	
+<!----- SLIDES END --->
+
+</body>
+</html>
